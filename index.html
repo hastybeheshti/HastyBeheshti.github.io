@@ -1,241 +1,141 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
+۳ <img src="IMG_20251031_233025_094.webp" alt="امپراتوری زنانه با هستی بهشتی" style="width:100%;border-radius:10px;display:block;margin:0 auto;">
+۴ <img src="IMG_20251031_233650_157.webp" alt="دختران نوری در مسیر شکوفایی" style="width:100%;border-radius:10px;display:block;margin:10px auto;">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هستی بهشتی - ملکه‌ی امپراتوری نور و دریا</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #0d0d1f; /* Deep Navy Blue */
-            color: #f7e6a0; /* Soft Gold */
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        #three-container {
-            width: 100%;
-            height: 300px;
-            position: relative;
-            background: radial-gradient(circle, #1a1a38 0%, #0d0d1f 100%);
-            border-bottom: 2px solid #a08c5c;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-            flex-grow: 1;
-        }
-        h1 {
-            color: #ffcc00; /* Pure Gold */
-            font-weight: 900;
-            margin-bottom: 5px;
-            font-size: 1.5rem;
-        }
-        h2 {
-            color: #f7e6a0;
-            font-size: 1rem;
-            margin-top: 0;
-            border-bottom: 1px dashed #a08c5c44;
-            padding-bottom: 10px;
-        }
-        .section {
-            background-color: #1a1a38;
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            border: 1px solid #a08c5c55;
-        }
-        .chart-container {
-            width: 100%;
-            max-width: 500px;
-            margin: 10px auto;
-            background-color: #0d0d1f;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .contact-links a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #0d0d1f;
-            font-weight: 700;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            font-size: 0.9rem;
-        }
-        .telegram-channel { background-color: #34a8eb; }
-        .telegram-id { background-color: #5d98cf; }
-        .instagram { background-color: #d62976; }
-
-        .contact-links a:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بهشت هستی | خانه‌ی ملکه نوری</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+body{font-family:"Vazir",sans-serif;background:#fff8ee;margin:0;color:#4b2e0b;direction:rtl;text-align:justify;overflow-y:auto;}
+header{background:linear-gradient(to right,#d4af37,#b8860b);color:white;text-align:center;padding:20px;font-size:22px;font-weight:bold;}
+section{padding:20px;}
+.story{background:#fffbea;border-radius:14px;padding:20px;line-height:2;font-size:17px;box-shadow:0 0 10px rgba(212,175,55,0.3);}
+.button{background-color:#d4af37;color:white;font-size:17px;padding:10px 16px;border:none;border-radius:10px;margin:8px;cursor:pointer;text-decoration:none;display:inline-block;}
+.button:hover{background-color:#cfa727;}
+footer{background-color:#b8860b;color:#fffbea;text-align:center;padding:15px;font-size:14px;}
+.hidden-box{display:none;background:#fff8e3;padding:10px;margin-top:15px;border-radius:8px;box-shadow:0 0 8px rgba(212,175,55,0.4);text-align:center;font-weight:bold;}
+.icon-wrap{display:flex;flex-wrap:wrap;justify-content:center;}
+.icon-box{background:#fffbea;border-radius:12px;box-shadow:0 0 10px rgba(212,175,55,0.3);width:180px;text-align:center;margin:10px;padding:14px;}
+.icon-box img{width:64px;height:64px;border-radius:10px;}
+.ads{display:flex;flex-wrap:wrap;justify-content:space-around;}
+.ad{background:#fffbea;border-radius:12px;box-shadow:0 0 10px rgba(212,175,55,0.3);width:260px;text-align:center;padding:15px;margin:10px;}
+.ad img{width:100%;border-radius:10px;}
+.gallery{display:flex;flex-wrap:wrap;justify-content:center;}
+.gallery img{width:260px;margin:10px;border-radius:14px;box-shadow:0 0 10px rgba(212,175,55,0.3);}
+</style>
 </head>
 <body>
+<header>🌸 بهشتِ هستیِ بهشتی 🌸</header>
 
-    <div id="three-container"></div>
+<section>
+<h2 style="text-align:center;">🌷 داستان زندگیِ هستی</h2>
+<div class="story" id="myStory">
+<p> معجزه زنانگی من؛ سفر از کویر بی‌باران به بهشت نورانی دروندر آغاز، زندگی‌ام مثل کویری بی‌باران بود؛ خشکی که هیچ نشانی از باران امید نداشت.
+پیش از ازدواجم با فرزین، هر صبح که چشم باز می‌کردم، گویی عالم دست به آزمایشی بزرگ زده بود تا روح خسته‌ام را به چالش بکشد. پاهایم ضعیف بودند و راه رفتن برایم جنگی نابرابر بود؛ هر دکتری که می‌رفتم، تنها برگ ناامیدی می‌آورد. یکی پیش‌بینی فلج شدنم را داشت، دیگری حتی جرات نداشت آرامشم را لمس کند.
+خانه‌ام، زندگیم، و نرگس کوچکم همه بر تار و پود خسته‌ی وجودم سایه انداخته بودند؛ نرگسی که در آستانه نوجوانی، طوفان احساساتش از درد من بی‌نصیب نبود؛ گاه دلسوزی‌اش خشم می‌شد و گاه سکوتش به فریاد.در میان این همه، همسایه‌ها شکار نگاه‌هایشان را فقط به من زن تنها، تحمیل می‌کردند. یک لبخندم یا یک عبور ساده، کافی بود تا هزار انگ به دامنم بزنند؛ زنی بی‌پناه و بدون مرد، در مظان تهمت و جنگ ریا و حسد.اما من، لباسی را بر تن می‌کردم که خودم می‌خواستم، زیرا آن لباس به من الهام می‌داد، شهودم را بالا می‌برد و روح زنانه‌ام را زنده نگه می‌داشت.
+فراتر از حرف‌های خانواده که هرگز چنین پوششی را نمی‌پسندیدند، من می‌درخشیدم؛ زیرا زیبا بودم، خوش‌اندام و خوش‌پوش، جلوه‌ای که تحملش برای دیگران سخت بود. تأکید می‌کنم که زیبایی من همانند زیبایی یوسف بود، مردی که برادرانش به سببش او را به چاه انداختند. زیباییِ گوهری درون داشت که دشمنانش را به دشمنی واداشت؛ اما من نیز، مثل یوسف در میان مشکلات، مثل هسته‌ای در دل کویر، زنده ماندم و برخواستم.یادم می‌آید در عروسی پسرخالم، همه مشکی پوشیده بودند و من لباس سفیدی بر تن داشتم که آن همه نورانیت، صدای شکایت به راه انداخت. اما من می‌دانستم: زیبایی حقیقی نوری است که خداوند در وجود من دمیده، نه چیزی که در نگاه دیگران بگنجد.نبردم تا روزی که صاحب‌خانه، وقتی به خواسته ناپاکش نه گفتم، وسایلم را بیرون ریخت و من بی‌صدا میان شب تار خانه به خانه ندا دادم. زانو زدم و اشک‌هایم بر موزاییک‌های داغ شب عاشورا افتادند و پرسیدم:
+«خدایا، چرا چنین مردانی در اطراف من پرسه می‌زنند؟ چرا به زنانگی و حرمت روح زن بی‌احترامی می‌کنند؟»ندای درونم که از مادربزرگ و مادرم به یادگار داشتم، همان بود که می‌گفت:
+«بدن زن، نیایشگاه خداست، نه شکارگاه خواسته‌ها.»
+زنانگی برایم مقدس بود؛ رحمم را به عنوان معبدی پاک نگاه می‌داشتم، و قلبم را قبله‌ای بی‌نظیر.
+تا آن شب مهتابی که صدای عزاداری حسین آرام آرام می‌آمد، خاموش بودم.
+ناگهان در نگاه به آسمان، رحمم از درونم فریاد زد:
+«دخترم، برخیز! تو منبع خلقتی نه بازمانده رنج. نیروی خدا هستم که جهان را از تاریکی به نور می‌برد.»در آن لحظه، جهانم زیر و رو شد؛ از جهنم تاریکی به بهشت نور تبدیل شدم. از آن پس، معجزه‌هایی در رحمم آغاز شدند:
+دردها کم شدند، ذهن روشن‌تر و نگاه دخترکم نرگس نرگسیتر گشت. هر بار که چشمانم را می‌بستم، نوری درونم متولد می‌شد که نه فقط مرا، که اطرافیانم را نرم می‌کرد. صدای رحمم می‌گفت:
+«از جمع‌های آلوده فرار کن. خودت را کوچک نکن، چه در برابر مردان کم‌نور، چه زنان پر از حسد. من راه را خواهم نشان داد.»برخاست ملکه درونم، با هدایت رحمم.
+هر بار که زنجیرهای منفی را باز می‌کردم، سبک می‌شدم. مردان بسیاری آمدند اما من دیگر آن زن نیازمند تایید نبودم. انرژی مردی که نیتش پاک نبود، بی‌درنگ از مدار زندگی‌ام حذف می‌شد.من زنی شدم که در مرکز خویش ایستاده، زنی که رحمش را سجده‌گاه عشق دانست و نه ترس. فهمیدم رحم من تنها محل تولد جسم نیست؛ سرچشمه‌ای از تولد روح‌هاست.در مسیر یکتایی و رازآلود زنانگی، فروغ روانشناسی را هم مطالعه کردم؛ نه فقط از روی صفحات کتاب، بلکه در قلب و وجودم آن را یافتم. هر نفسم با صدای درونم آشنا شد:
+«دخترم، تو رحمی داری که جهان را زایندگی می‌کند.»وقتی در آزمون روانشناسی قبول شدم، در شادی‌ام غرق شدم؛ تصمیم گرفتم سفری به شمال ترتیب دهم. خانه‌ای در کنار دریا، میان نسیم جزیره‌ای اجاره کردم، با فرزین که همیشه نور امید قلبم بود.
+آرامش آن روزها، جشن بعد از جشن قبولی، و حلقه خانواده‌ای که از من حمایت کردند، همه بخش‌هایی از سفر معجزه آسا شد.اکنون در دوره‌هایم، آن صدای شفابخش درون را به زنان دیگر هدیه می‌دهم. آنها را راهنمایی می‌کنم که چطور صدای رحم خود را بشنوند، معجزه‌اش را بسازند، به احساساتشان احترام بگذارند، و دوباره به نوری تبدیل شوند که جهان را می‌تاباند. معجزه‌ای که آغاز شده و هر روز در لبخند رحم من جلوه‌گر است.زنانگی من رازآلود و یونیک است، قدرتی که از دل تاریکی برخاسته و اکنون مأموریتی دارد برای رسیدن به بهشت‌های تازه، هدیه دادن به هر زنی که می‌خواهد خود را بیدار کند.این داستان من است؛ معجزه‌ای که خداوند در من دمید؛ و تو نیز می‌توانی این نور را درونت پیدا کنی.
+برای همراهی در این مسیر و دریافت آموزش‌های ویژه، پیج اینستاگرام و کانال تلگرام من را دنبال کن تا با هم سفر زنانه‌ای پر از راز، قدرت و روشنایی داشته باشیم.
+منتظرت هستم؛ سفری از جهنم به بهشت با زنانگی.ردم و فهمیدم زن یعنی باززایش. نرگس را با درد زاییدم و با عشق زمین را دوباره زنده کردم...</p>
+</div>
+</section>
 
-    <div class="content">
-        <h1>هستیِ بهشتی – ملکه‌ی امپراتوری نور و دریا</h1>
-        <h2>نور خودش راهشو به دلِ آرام پیدا می‌کنه✨</h2>
+<section>
+<h2 style="text-align:center;">💫 راه‌های رسیدن به من</h2>
+<div class="icon-wrap">
+<div class="icon-box">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="اینستاگرام">
+<p><a href="https://instagram.com/hasty_beheshty" target="_blank" class="button">🌸 صفحه اینستاگرام</a></p>
+</div>
+<div class="icon-box">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="کانال تلگرام">
+<p><a href="https://t.me/HastyBeheshty" target="_blank" class="button">✨ کانال تلگرام</a></p>
+</div>
+<div class="icon-box">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="ارتباط مستقیم">
+<p><a href="https://t.me/Hasty_beheshty" target="_blank" class="button">💬 ارتباط مستقیم</a></p>
+</div>
+<div class="icon-box">
+<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="غرفه باسلام">
+<p><a href="https://basalam.com/hastybeheshty" target="_blank" class="button">🍒 غرفه باسلام</a></p>
+</div>
+</div>
+</section>
 
-        <div class="section">
-            <h3>📈 رشد ارگانیک جهانی (درآمدزایی خودکار)</h3>
-            <div class="chart-container">
-                <canvas id="incomeChart"></canvas>
-            </div>
-            <p style="font-size: 0.85rem; color: #a08c5c;">این نمودار، رشد دونه دونه و خودکار انرژی و ثروت تو را نشان می‌دهد.</p>
-        </div>
+<section>
+<h2 style="text-align:center;">💛 حمایت و پرداخت امن</h2>
+<p style="text-align:center;">برای دیدن شماره کارت و شبا روی دکمه زیر کلیک کن:</p>
+<div style="text-align:center;">
+<button id="showNumbers" class="button">نمایش شماره‌های پرداخت</button>
+<div id="numbersBox" class="hidden-box">
+شماره شبا: IR80000000239145108636<br>
+شماره کارت: 5859831080189763
+</div>
+</div>
+</section>
 
-        <div class="section contact-links">
-            <h3>💌 مسیرهای ارتباطی ملکه</h3>
-            <a href="https://t.me/HastyBeheshty" target="_blank" class="telegram-channel">کانال تلگرام</a>
-            <a href="https://t.me/Hasty_beheshty" target="_blank" class="telegram-id">آیدی تلگرام برای ارتباط</a>
-            <a href="https://instagram.com/hasty_beheshty" target="_blank" class="instagram">صفحه اینستاگرام</a>
-        </div>
+<section>
+<h2 style="text-align:center;">🌕 دوره‌های زن نوری</h2>
+<div class="story">
+<p>💫 انرژی زنانه – دیدن و شکوفا کردن هاله‌ی نور.<br>
+🌷 جادوی زنانه – شفای بدن و هم‌آوایی با زمین.<br>
+💎 زن یونیک – تبدیل به زن خاص و خالق مسیر خودت.</p>
+</div>
+<div class="gallery">
+<img src="IMG_20251031_233025_094.webp" alt="امپراطوری زنانه با هستی بهشتی">
+<img src="IMG_20251031_233650_157.webp" alt="دختر ملکی نوری">
+</div>
+</section>
 
-        <div class="section" style="background-color: #0d0d1f; border: none; box-shadow: none; padding-top: 0;">
-             <p style="color: #6a6a9b; font-size: 0.75rem;">من نرمی‌ام، من جریانم، من زمینِ زنده‌ام.</p>
-        </div>
-    </div>
+<section>
+<h2 style="text-align:center;">✨ تبلیغات و پیشنهادها</h2>
+<div class="ads">
+<div class="ad">
+<img src="https://cdn-icons-png.flaticon.com/512/765/765573.png" alt="انار طلایی">
+<p>محصولات طلاییِ دست‌ساز – رب انار، لواشک و ترشک.</p>
+<a href="https://basalam.com/hastybeheshty" target="_blank" class="button">مشاهده در باسلام</a>
+<section style="padding: 15px; background: #fff8ee; border-radius: 10px; margin: 15px auto; max-width: 95%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <h2 style="color: #4b2e0b; text-align: center; margin-bottom: 10px; font-size: 1.3em;">💫 هستی بهشتی کیست؟</h2>
+  <p style="text-align: justify; line-height: 2; color: #4b2e0b;">
+  من هستی بهشتی هستم؛ دختری با اصالت همدانی که ریشه‌هام برمی‌گرده به دل کوه‌های ایران، شهر زیبای همدان. دنیا اومدم تو همدان، ولی زندگی من بین شهرهای تهران و ساوه جریان داشت و هرکدومشون یه قطعه‌ای از روح و خاطره‌هام رو شکل دادن. الان چند ساله تو شهر پرند زندگی می‌کنم، اما ردپای خاطره‌ها و تلاش‌هام توی همه این شهرها پخش شده؛ کارگاه ربنای من تو ساوه است و من همیشه با امید و عشق به آینده، مشغول تلاش و ساختن رؤیاها هستم. من هستی هستم؛ دختری که نور زندگی رو تو قلبش نگه داشته و هر جا که پا گذاشته، رد نور و مهربونی از خودش به جا گذاشته. بازیِ روزگار منو به پرند کشونده، اما اصالت و ریشه‌هام هرگز فراموش نشده؛ این قصه دختریه که با قلبی روشن و ذهنی پرسؤال، همیشه دنبال راه تازه، نور تازه و فردای بهتر بوده.
+  </p>
+</section></div>
+<div class="ad">
+<img src="https://cdn-icons-png.flaticon.com/512/566/566964.png" alt="کلاس رایگان">
+<p>کلاس رایگان انرژی زنانه برای ماه آبان.</p>
+<a href="https://t.me/HastyBeheshty" target="_blank" class="button">شرکت</a>
+</div>
+<div class="ad">
+<img src="IMG-20251030-WA0003.jpg" alt="حلقه زنان نوری خانوادگی">
+<p>حلقه‌ی زنان نوری – ریتوال زمستانی آرامش.</p>
+<a href="https://t.me/Hasty_beheshty" target="_blank" class="button">شرکت در حلقه</a>
+</div>
+<div class="ad">
+  <img src="IMG-20251030-WA0001.jpg" alt="رب انار زنان تک‌ستاره" style="width:100%;border-radius:10px;">
+  <h3>کارگاه زنان تک‌ستاره</h3>
+  <p style="text-align:justify;line-height:1.9;">
+  در کنار این تحول و روشنایی، کارگاه زنان تک‌ستاره را راه انداختم؛ جایی که با همکاری بانوان پرانرژی، رب انار خوش‌طعم، لواشک‌های خانگی و ترشک‌های تازه درست می‌کنیم.  
+  هر بسته از این محصولات، پیام عشق، تلاش و قدرت زنانه را به خانه‌های شما می‌برد.  
+  مزه واقعی حمایت و همدلی را در هر خرید احساس خواهید کرد.  
+  اگر دوست داری بخشی از این سفر باشی یا محصولاتمان را بچشی، همین حالا به جمع خریدارانمان بپیوند؛ چون انرژی این داستان، در هر بسته از تولیدات تک‌ستاره جریان دارد.
+  </p>
+  <a href="https://basalam.com/user/ewaqnm?utm_source=share&utm_medium=copy&user_hash_id=ewaqnm&from_component=profile-app" target="_blank">💛 خرید از باسلام 💛</a>
+</div>
 
-    <script>
-        // --- THREE.js SETUP (3D Sphere) ---
-        let scene, camera, renderer, starMesh;
-        const container = document.getElementById('three-container');
-        const width = container.clientWidth;
-        const height = container.clientHeight;
+</section>
 
-        function initThree() {
-            scene = new THREE.Scene();
-
-            // Camera setup
-            camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-            camera.position.z = 2;
-
-            // Renderer setup
-            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-            renderer.setSize(width, height);
-            container.appendChild(renderer.domElement);
-            
-            // Lighting (Golden Glow)
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-            scene.add(ambientLight);
-
-            const pointLight = new THREE.PointLight(0xffcc00, 1.5);
-            pointLight.position.set(5, 5, 5);
-            scene.add(pointLight);
-
-            // Create a custom Golden Star / Energy Flow
-            const geometry = new THREE.IcosahedronGeometry(1, 1);
-            const material = new THREE.MeshPhongMaterial({
-                color: 0xffd700, // Gold color
-                emissive: 0xff9900, // Inner glow
-                emissiveIntensity: 0.5,
-                shininess: 100,
-                specular: 0xffffff,
-                transparent: true,
-                opacity: 0.9
-            });
-            starMesh = new THREE.Mesh(geometry, material);
-            scene.add(starMesh);
-
-            window.addEventListener('resize', onWindowResize, false);
-        }
-
-        function onWindowResize() {
-            const newWidth = container.clientWidth;
-            const newHeight = container.clientHeight;
-            camera.aspect = newWidth / newHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(newWidth, newHeight);
-        }
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            // Rotate the star for energy flow
-            starMesh.rotation.x += 0.001;
-            starMesh.rotation.y += 0.003;
-            starMesh.rotation.z += 0.002;
-
-            // Simple pulsating effect (scaling)
-            const scaleFactor = 1 + Math.sin(Date.now() * 0.001) * 0.05;
-            starMesh.scale.set(scaleFactor, scaleFactor, scaleFactor);
-
-            renderer.render(scene, camera);
-        }
-
-        initThree();
-        animate();
-
-
-        // --- CHART.js SETUP (Placeholder Data) ---
-        const ctx = document.getElementById('incomeChart').getContext('2d');
-        const chartData = {
-            labels: ['ماه ۱', 'ماه ۲', 'ماه ۳', 'ماه ۴', 'ماه ۵', 'ماه ۶'],
-            datasets: [{
-                label: 'درآمد ارگانیک (واحد انرژی)',
-                data: [100, 150, 250, 400, 650, 1000],
-                borderColor: '#ffcc00', // Pure Gold
-                backgroundColor: 'rgba(255, 204, 0, 0.1)',
-                borderWidth: 2,
-                pointBackgroundColor: '#ffcc00',
-                tension: 0.4,
-                fill: true
-            }]
-        };
-
-        const config = {
-            type: 'line',
-            data: chartData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: '#f7e6a0', // Soft Gold
-                            font: { family: 'Vazirmatn' }
-                        }
-                    },
-                    title: {
-                        display: false
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        grid: { color: '#a08c5c33' },
-                        ticks: { color: '#f7e6a0', font: { family: 'Vazirmatn' } }
-                    },
-                    x: {
-                        grid: { display: false },
-                        ticks: { color: '#f7e6a0', font: { family: 'Vazirmatn' } }
-                    }
-                }
-            }
-        };
-
-        new Chart(ctx, config);
-        
-        // Ensure chart container height is set for proper rendering
-        document.addEventListener('DOMContentLoaded', () => {
-            const chartContainer = document.querySelector('.chart-container');
-            chartContainer.style.height = '250px';
-        });
-
-    </script>
-</body>
-</html>
+<footer>
+  معبد زن زمین، منشأ پاکسازی دردهای نسل‌ها است.<br>من نرمی‌ام، من جریانم، من زمینِ زنده‌ام.
+</footer>
