@@ -100,7 +100,7 @@ footer{background-color:#b8860b;color:#fffbea;text-align:center;padding:15px;fon
 </section>
 
 <section>
-<h2 style="text-align:center;">✨ تبلیغات و پیشنهادها</h2>
+<h2 style="text-align:center;">3✨ تبلیغات و پیشنهادها</h2>
 <div class="ads">
 <div class="ad">
 <img src="https://cdn-icons-png.flaticon.com/512/765/765573.png" alt="انار طلایی">
@@ -139,3 +139,139 @@ footer{background-color:#b8860b;color:#fffbea;text-align:center;padding:15px;fon
 <footer>
   معبد زن زمین، منشأ پاکسازی دردهای نسل‌ها است.<br>من نرمی‌ام، من جریانم، من زمینِ زنده‌ام.
 </footer>
+
+  <!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>حمایت از راهِ نور</title>
+<style>
+body{
+  background:linear-gradient(to bottom,#fff8ec,#fdf2db);
+  font-family:'Vazirmatn',sans-serif;
+  color:#513303;
+  text-align:center;
+  margin:0;
+  overflow:auto;
+}
+.sun-box{
+  margin:40px auto 10px;
+  width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,#fff6b9 10%,#ffd73a 60%,#f7b22a 90%);
+  position:relative;
+  box-shadow:0 0 35px 10px rgba(255,200,80,0.7);
+  animation:shine 4s infinite alternate;
+}
+@keyframes shine{
+  from{box-shadow:0 0 25px rgba(255,200,80,0.5);}
+  to{box-shadow:0 0 55px rgba(255,210,100,0.9);}
+}
+.ray{
+  position:absolute;left:50%;top:50%;
+  width:155px;height:155px;border-radius:50%;
+  border:2px dashed rgba(245,200,60,0.7);
+  transform:translate(-50%,-50%);
+  animation:rotateRays 12s linear infinite;
+}
+@keyframes rotateRays{
+  from{transform:translate(-50%,-50%) rotate(0deg);}
+  to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+.pay-box{
+  margin:10px auto;
+  background:linear-gradient(to right,#ffc0d8,#ff9bbc);
+  color:#5a2349;
+  padding:20px;
+  border-radius:15px;
+  width:320px;
+  box-shadow:0 0 15px rgba(255,130,170,0.5);
+}
+.pay-box h2{color:#a12468;margin-bottom:10px;}
+.pay-box p{line-height:1.9;font-size:14px;margin:8px 0;}
+.hidden{filter:blur(8px);user-select:none;}
+#paymentInfo{display:none;margin-top:10px;direction:ltr;color:#422a11;font-weight:bold;}
+.pay-btn,.copy-btn{
+  cursor:pointer;
+  background:#fff;
+  border:none;
+  padding:7px 15px;
+  border-radius:8px;
+  margin-top:8px;
+  font-weight:bold;
+  color:#a12468;
+  box-shadow:0 0 8px rgba(255,130,170,0.5);
+}
+.copy-btn{margin-left:5px;}
+.course-section{
+  max-width:480px;
+  background:#fff7ed;
+  border-radius:18px;
+  margin:30px auto;
+  padding:20px;
+  box-shadow:0 0 15px rgba(180,140,60,0.3);
+}
+.course-section h3{color:#a66a00;margin-bottom:12px;}
+.course-section p{font-size:14px;line-height:2;}
+</style>
+</head>
+<body>
+
+<div style="margin-top:30px; font-weight:bold; font-size:16px; color:#a66a00;">
+  من منبعِ وفورَم؛ هر نگاهی به من، نوری می‌گیرد و برکتی می‌کارد.
+</div>
+
+<div class="sun-box"><div class="ray"></div></div>
+
+<section class="pay-box">
+  <h2>حمایت از راهِ نور</h2>
+  <p><strong>حمایت شما صرف گسترش پروژه‌های روشنگری و رسیدگی به زنان است.</strong></p>
+  <p><strong>این حمایت، سرمایه‌گذاری در نور و نورِ نجات است.</strong></p>
+  <button class="pay-btn" onclick="togglePaymentInfo()">نمایش شماره کارت</button>
+  <div id="paymentInfo">
+    <p>شماره کارت:
+      <span id="cardNum" class="hidden">۵۸۵۹۸۳۱۰۸۰۱۸۹۷۶۳</span>
+      <button class="copy-btn" onclick="copyText('cardNum')">کپی شماره کارت</button>
+    </p>
+    <p>شماره شبا:
+      <span id="shabaNum" class="hidden">IR80000000239145108636</span>
+      <button class="copy-btn" onclick="copyText('shabaNum')">کپی شماره شبا</button>
+    </p>
+  </div>
+  <p style="margin-top:10px;font-size:13px;opacity:0.8;">این مبلغ کاملاً دلی است؛ هرکس در اندازه‌ی عشق و وسع خود می‌نویسد.</p>
+</section>
+
+<div class="course-section">
+  <h3>دوره‌های پاک‌سازی و نرمی</h3>
+  <p>
+  • بازگشت به آرامش<br>
+  • تطهیر روح از درد و قضاوت<br>
+  • بازیابی لذت و نرمی در بدن<br>
+  • تغذیه‌ی زن با نور و شعور زمین<br>
+  • لواشک و رب‌انار: سفر مزه به دلِ زمین
+  </p>
+</div>
+
+<script>
+function togglePaymentInfo(){
+  const info=document.getElementById('paymentInfo');
+  const card=document.getElementById('cardNum');
+  const shaba=document.getElementById('shabaNum');
+  if(info.style.display==='block'){
+    info.style.display='none';
+    card.classList.add('hidden');
+    shaba.classList.add('hidden');
+  }else{
+    info.style.display='block';
+    card.classList.remove('hidden');
+    shaba.classList.remove('hidden');
+  }
+}
+function copyText(id){
+  const text=document.getElementById(id).textContent.trim();
+  navigator.clipboard.writeText(text);
+  alert('کپی شد 🌸');
+}
+</script>
+
+</body>
+</html>
